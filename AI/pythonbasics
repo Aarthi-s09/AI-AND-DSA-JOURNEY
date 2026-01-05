@@ -10,3 +10,72 @@ printing float using format
 x = 3.14159
 print(f"Value: {x:.2f}")
 
+
+1️⃣ Python Data Types & Variables
+Common types: int, float, str, bool
+Type conversion functions:
+Function	Converts to	Example
+int()	Integer	int(3.9) → 3
+float()	Float	float("2.5") → 2.5
+str()	String	str(10) → "10"
+Examples:
+x = "10"
+y = int(x) + 5  # 15
+
+pi = 3
+print(float(pi)) # 3.0
+
+print("Age: " + str(25)) # Age: 25
+Input is always string: input() → use type conversion to use numerically.
+
+2️⃣ Python String & Sequence Indexing
+Indexing:
+Positive index → start from left (0)
+Negative index → start from right (-1 = last character)
+Access elements:
+s = "Python"
+print(s[0])  # P
+print(s[-1]) # n
+
+3️⃣ Python String / Sequence Formatting
+
+f-strings: f"{variable}"
+Width & Alignment:
+x = 3.14159
+print(f"{x:10.2f}")  # width=10, right aligned default → '      3.14'
+print(f"{x:<10.2f}") # left aligned → '3.14      '
+print(f"{x:^10.2f}") # center → '   3.14   '
+print(f"{x:>10.2f}") # right → '      3.14'
+String alignment with f-string:
+print(f"|{'Left':<10}|{'Center':^10}|{'Right':>10}|")
+< → left, > → right, ^ → center
+If alignment omitted → left by default for strings.
+
+4️⃣ Type Conversion (Casting)
+
+Convert types using int(), float(), str()
+Important points:
+int() discards decimals
+float() converts integers or numeric strings to float
+str() converts numbers to text
+Example:
+a = "10"
+b = "5"
+print(int(a) + int(b)) # 15
+
+5️⃣ Python Slicing
+Syntax:
+sequence[start:stop:step]
+start → inclusive
+stop → exclusive
+step → move direction & jump size
+Positive step (forward):
+start < stop
+Default step = 1
+Omitting start → 0
+Omitting stop → end of sequence
+Negative step (backward):
+start > stop
+Step negative (-1) → move left
+Omitting start → end of sequence
+Omitting stop → beginning of sequence
