@@ -1,1 +1,12 @@
+python --version    (to check version in cmd)
+to code in cmd type py and you can type small code there
+x = 10          # int
+y = 3.14        # float
+name = "Aarthi" # string
+flag = True     # boolean
+type(x) to know datatype of the variable 
+
+printing float using format 
+x = 3.14159
+print(f"Value: {x:.2f}")
 
