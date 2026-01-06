@@ -79,3 +79,20 @@ start > stop
 Step negative (-1) → move left
 Omitting start → end of sequence
 Omitting stop → beginning of sequence
+
+
+day 2 
+Lists → datasets (features, labels, batches)
+Dictionaries → records, JSON data, model configs
+Mean / Median → basic statistics used everywhere in ML
+
+
+loop for dict
+for key, value in student.items():
+    print(key, value)
+
+Mean
+Mean=Number of values/Sum of values​
+Median
+If odd count → middle value
+If even count → average of two middle values
