@@ -96,3 +96,19 @@ Mean=Number of values/Sum of values​
 Median
 If odd count → middle value
 If even count → average of two middle values
+
+
+🔹 List Comprehension
+Compact way to write loops.
+squares = [x*x for x in range(5)]
+
+
+With condition:
+evens = [x for x in range(10) if x % 2 == 0]
+
+
+Equivalent loop:
+evens = []
+for x in range(10):
+    if x % 2 == 0:
+        evens.append(x)
