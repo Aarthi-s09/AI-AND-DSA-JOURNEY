@@ -112,3 +112,50 @@ evens = []
 for x in range(10):
     if x % 2 == 0:
         evens.append(x)
+
+✅ 1️⃣ filter() → YES, can be replaced by list comprehension
+Your filter() example
+marks = [35, 60, 45, 80, 30]
+
+passed = list(filter(lambda x: x >= 50, marks))
+print(passed)
+
+✅ Equivalent list comprehension (Preferred in Python)
+passed = [x for x in marks if x >= 50]
+print(passed)
+
+🔹 Interview-ready explanation
+
+filter() can be replaced by list comprehension, which is more readable and Pythonic.
+
+❌ 2️⃣ reduce() → NOT list comprehension
+Your reduce() example
+from functools import reduce
+
+salaries = [20000, 30000, 25000]
+
+total_payout = reduce(lambda a, b: a + b, salaries)
+print(total_payout)
+
+❌ This CANNOT be done using list comprehension directly
+
+Because:
+
+List comprehension creates a list
+
+reduce() returns a single value
+
+✅ What to use instead of reduce() (IMPORTANT)
+🔹 Best Pythonic replacement → sum()
+total_payout = sum(salaries)
+print(total_payout)
+
+🔹 Or for loop
+total = 0
+for s in salaries:
+    total += s
+
+Function	Can use List Comprehension?	Best Pythonic Alternative
+map()	✅ Yes	List comprehension
+filter()	✅ Yes	List comprehension
+reduce()	❌ No	sum(), min(), max()
