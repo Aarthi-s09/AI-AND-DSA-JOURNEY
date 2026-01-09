@@ -171,13 +171,29 @@ Meaning:
 1 → one image
 
 784 → 28 × 28 pixels
-
 ✔️ Perfect for ML model input
 
 7️⃣ ONE-LINE MEMORY TRICK 🧠
 
 reshape() → change shape
-
 flatten() → 1D copy
-
 ravel() → 1D view (linked)
+
+~Scalar broadcasting
+a = np.array([1,2,3])
+a + 10
+
+Output:
+[11 12 13]
+
+~Vector broadcasting
+X = np.array([[1,2],
+              [3,4]])
+
+X + [10,20]
+Output:
+
+[[11 22]
+ [13 24]]
+
+👉 Makes ML code short & fast
